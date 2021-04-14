@@ -104,6 +104,8 @@
 }
 
 .container .btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 200px;
   height: 40px;
   text-align: center;
@@ -128,8 +130,15 @@
 }
 
 .container .btn:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: #e882e8;
   color: #fff;
+}
+
+.container .btn:click {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .container .btn:focus {
@@ -169,6 +178,8 @@
   border: 1px solid #fff;
   font-size: 0.9rem;
   border-radius: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .container .icon:hover {

@@ -6,6 +6,9 @@ $background-image-mobile:url('/images/bg-mobile.svg');
 $font-family-para: 'Open Sans', sans-serif;
 $violet: hsl(257, 40%, 49%);
 $soft-magenta:hsl(300, 69%, 71%);
+@mixin ease-in-out {
+    transition: all 0.3s ease-in-out;
+}
 *{
     box-sizing:border-box;
 }
@@ -76,7 +79,7 @@ p{
 }
 }
 .btn{
-    
+ @include ease-in-out();
     width:200px;
     height:40px;
     text-align:center;
@@ -92,8 +95,12 @@ p{
     margin:0 auto;
    box-shadow:1px 10px 10px #4444;
     &:hover{
+        @include ease-in-out();
         background:$soft-magenta;
         color:#fff;
+    }
+    &:click {
+        transform: scale(0.9);
     }
     &:focus{
 outline:none;
@@ -120,7 +127,7 @@ outline:none;
     border:1px solid #fff;
     font-size:0.9rem;
     border-radius:40px;
-
+    @include ease-in-out();
 &:hover{
     color:$soft-magenta;
     border-color:$soft-magenta;
