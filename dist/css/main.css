@@ -136,17 +136,15 @@
   color: #fff;
 }
 
-.container .btn:click {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
 .container .btn:focus {
   outline: none;
+  cursor: pointer;
 }
 
 .container .btn:active {
   border: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .container .icons {
@@ -180,6 +178,7 @@
   border-radius: 40px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .container .icon:hover {
