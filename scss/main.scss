@@ -163,12 +163,21 @@ footer{
         padding:0 15px;
     margin-right:0;
        width:100vw;
+p {
+    width: 50vw;
+    font-size: 0.8rem;
 }
+    }
 
     }
 }
+@media(min-width:800px)and(max-width:1200px) {
+    .content p {
+        width: 40vw;
+    }
+}
 
-@media(min-width:1150px){
+@media(min-width:1200px) {
 #whole-page{
     background:$background-image-desktop;
     background-size:cover;
