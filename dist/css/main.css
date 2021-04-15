@@ -233,6 +233,9 @@
   .container {
     position: relative;
   }
+  .container .mid-image {
+    margin-right: 15px;
+  }
   .container .icons {
     position: absolute;
     bottom: 5rem;
